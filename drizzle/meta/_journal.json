@@ -15,6 +15,13 @@
       "when": 1739230291076,
       "tag": "0001_furry_lenny_balinger",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1739317626366,
+      "tag": "0002_dashing_hawkeye",
+      "breakpoints": true
     }
   ]
 }

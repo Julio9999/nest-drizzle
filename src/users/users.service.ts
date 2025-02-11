@@ -14,12 +14,16 @@ export class UsersService {
 
     getUsers(){
         return this.database.query.users.findMany({
-            with: {posts: true}
+            with: {posts: true, profile: true}
         })
     }
 
     createUser(user: typeof schema.users.$inferInsert){
         return this.database.insert(schema.users).values(user)
+    }
+
+    createProfile(profile: typeof schema.profile.$inferInsert){
+        return this.database.insert(schema.profile).values(profile)
     }
 
 }
